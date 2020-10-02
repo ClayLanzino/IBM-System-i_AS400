@@ -1,5 +1,5 @@
 #*************************************************************************************
-# Purpose:  This Script  is designed to illustrate how to use a  connection to an IBM
+# Purpose:  This Script  is designed to illustrate how to use a  connection on IBM
 # System i  FTP Server, using the connect and login methods with Python.     
 # By: Clay Lanzino August 2020                                                                                                 
 #*************************************************************************************
