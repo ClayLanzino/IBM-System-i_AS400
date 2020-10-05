@@ -3,6 +3,7 @@
 # System i  FTP Server, using the connect and login methods with Python.     
 #                                                                                                  
 #*************************************************************************************
+#  -*- coding: utf-8 -*-
 from ftplib import FTP
 ftp = FTP()
 ftp.connect('xx.xx.xxx.xx or Host_name' , 21, -999) 
