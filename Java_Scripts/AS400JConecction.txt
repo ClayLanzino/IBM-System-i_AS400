@@ -3,6 +3,7 @@
 // AS400JConecction example.
 // Purpose: This script is designed to illustrate how to use a connection to an IBM System i - AS / 400 Server,
 // using the connection and login methods with Java. Additionally it connects to a Database via SQL statements.
+// Note: Where xx is the Server IP address.
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 import com.ibm.as400.access.AS400JDBCDriver; 
