@@ -1,0 +1,35 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// AS400JConecction example.
+// Purpose: This script is designed to illustrate how to use a connection to an IBM System i - AS / 400 Server,
+// using the connection and login methods with Java. Additionally it connects to a Database via SQL statements.
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+import com.ibm.as400.access.AS400JDBCDriver; 
+import java.sql.*;
+
+public class AS400JConecction {
+  public static void main(String[] args) {
+
+     try {
+        System.out.println("Trying to connect...");
+        String DRIVER = "com.ibm.as400.access.AS400JDBCDriver";
+        String URL = "jdbc:as400://xx.xx.xx.xx";
+        Class.forName(DRIVER);
+        Connection conn = DriverManager.getConnection(URL,"UerProfile", "Password");
+        Statement stmt = conn.createStatement();
+        ResultSet rs = stmt.executeQuery("select Field1, Field2, Field3 from LibraryName.DataBaseFileName");
+        System.out.println("Connected with " + conn);
+        System.out.println("Field1        Field2      Field3");
+        while(rs.next()) {
+            System.out.println(rs.getString("Field1")+" "+rs.getString("Field2")+" "+rs.getInt("Field3"));
+       }
+       conn.close();
+       System.exit(0);
+    }
+    catch(Exception e) {
+       System.out.println(e);
+    }
+  }
+ }
+
