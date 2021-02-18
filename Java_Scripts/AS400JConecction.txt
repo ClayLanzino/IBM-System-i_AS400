@@ -15,7 +15,7 @@ public class AS400JConecction {
      try {
         System.out.println("Trying to connect...");
         String DRIVER = "com.ibm.as400.access.AS400JDBCDriver";
-        String URL = "jdbc:as400://xx.xx.xx.xx";
+        String URL = "jdbc:as400://xx.xx.xxx.xx";
         Class.forName(DRIVER);
         Connection conn = DriverManager.getConnection(URL,"UerProfile", "Password");
         Statement stmt = conn.createStatement();
