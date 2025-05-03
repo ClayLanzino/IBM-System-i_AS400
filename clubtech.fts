@@ -1,7 +1,0 @@
-QHILE 
-UVXADM50 
-cd temporal 
-quote site namefmt 0 
-quote rcmd call Temporal/Uti933_C_T 
-ascii 
-quit 
