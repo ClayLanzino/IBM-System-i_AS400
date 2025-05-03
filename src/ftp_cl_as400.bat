@@ -1,4 +1,4 @@
-:: Conectarse a IBM i (AS/400) y llamar al proceso de ajuste Salarial de Nomina
+:: Connect to IBM i (AS/400) and call the Payroll  adjustment process.
 :: By Clay Lanzino.  Noviembre del 2022
 
 
@@ -7,7 +7,7 @@ SetLocal EnableDelayedExpansion
 color A
 echo.
 echo.
-echo ###  Comienzo De Ejecucion Interfaz Cliente  a  ---> IBM i.  Favor esperar que el proceso finalize...   ###
+echo ###  Starting running Client Interface to ---> IBM i.  Please wait for the process to finish...   ###
 echo Argumentos: %*
 
 
