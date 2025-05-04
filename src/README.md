@@ -1,4 +1,4 @@
-# IBM System i_AS400
+# Python - IBM i - AS400 interface
 # Features:
 
 - Easy installation
