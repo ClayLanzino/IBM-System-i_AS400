@@ -1,5 +1,5 @@
 :: Conectarse a IBM i (AS/400) y llamar al proceso de ajuste Salarial de Nomina
-:: By Clay Lanzino.  Noviembre del 2022
+:: By Clay Lancini.  Noviembre del 2022
 
 
 @echo off
