@@ -1,5 +1,5 @@
 :: Connect to IBM i (AS/400) and call the Payroll  adjustment process.
-:: By Clay Lanzino.  Noviembre del 2022
+:: By Clay Lancini.  Noviembre del 2022
 
 
 @echo off
