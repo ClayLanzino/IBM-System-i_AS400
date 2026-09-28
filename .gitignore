@@ -11,6 +11,11 @@ venv/
 env/
 .venv/
 
+# Build artifacts
+dist/
+build/
+*.spec
+
 # IDE
 .vscode/
 .idea/
@@ -22,4 +27,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Windows shortcuts
 *.lnk
