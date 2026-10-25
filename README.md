@@ -144,7 +144,7 @@ This project is licensed under the **MIT License**. See the 'LICENSE' file for d
 
 **Clay Lancini**
 
-- 📧 Email: [claylancini@gmail.com](mailto:claylancini@gmail.com)
+- 📧 Email: [clay.lancini@gmail.com](mailto:clay.lancini@gmail.com)
 - 🐙 GitHub: [github.com/ClayLanzino](https://github.com/ClayLanzino)
 
 ---
