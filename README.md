@@ -52,11 +52,16 @@ This reduces manual data entry, avoids human error, and speeds up the payroll cy
 ▼
 [ Salary records updated in DB2/400 ]
 
-## 📸 Interface Preview
+## 📱 Interface Preview
 
-![PAYROLL Confirmation Dialog](https://raw.githubusercontent.com/ClayLanzino/IBM-System-i_AS400/master/images/payroll_confirmation_dialog.png)
+**1. PAYROLL Confirmation Dialog**
+![PAYROLL Confirmation Dialog](https://raw.githubusercontent.com/ClayLanzino/IBM-System-i_AS400/master/images/payroll.png)
 
-*Confirmation dialog of the PAYROLL executable. The user confirms the execution, and the system converts the '.xls' file to '.csv' and updates the salaries in the IBM DB2/400 database.*
+**2. Payroll Execution Console (Python & DB2/400 Connection)**
+![Payroll Execution Console](https://raw.githubusercontent.com/ClayLanzino/IBM-System-i_AS400/master/images/payroll.exe.png)
+
+*Confirmation dialog of the PAYROLL executable. The user confirms the execution, and the system converts the `.xls` file to `.csv` and updates the salaries in the IBM DB2/400 database.*
+
 ---
 
 ## 🧰 Tech Stack
