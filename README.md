@@ -38,19 +38,20 @@ This reduces manual data entry, avoids human error, and speeds up the payroll cy
 ---
 
 ## ⚙️ How It Works
+```text
 [ .xls file with employee salaries ]
-│
-▼
-[ payroll.py / PAYROLL.exe ]
-│
-▼
-[ .csv intermediate file ]
-│
-▼
-[ ODBC / FTP connection to IBM i ]
-│
-▼
-[ Salary records updated in DB2/400 ]
+              │
+              ▼
+     [ payroll.py / PAYROLL.exe ]
+              │
+              ▼
+    [ .csv intermediate file ]
+              │
+              ▼
+  [ ODBC / FTP connection to IBM i ]
+              │
+              ▼
+  [ Salary records updated in DB2/400 ]
 
 ## 📱 Interface Preview
 
@@ -79,18 +80,21 @@ This reduces manual data entry, avoids human error, and speeds up the payroll cy
 ---
 
 ## 📁 Project Structure
+```text
 IBM-System-i_AS400/
+│
 ├── src/
-│ ├── AS400_ODBC_Conection.py # ODBC connection to IBM i
-│ ├── Ftp_IBM_System_i.py # FTP transfer to IBM i IFS
-│ ├── payroll.py # Main payroll processing script
-│ ├── payroll_b.py # Alternative / legacy version
-│ ├── Data_EO.csv / .xls # Sample input data
-│ ├── ftp_cl_as400.bat # Batch file for FTP operations
-│ ├── .env # Environment variables (credentials)
-│ └── README.md
-├── Java_Scripts/ # Additional Java utilities
-├── Python_Scripts/ # Standalone Python scripts
+│   ├── AS400_ODBC_Conection.py   # ODBC connection to IBM i
+│   ├── Ftp_IBM_System_i.py       # FTP transfer to IBM i IFS
+│   ├── payroll.py                # Main payroll processing script
+│   ├── payroll_b.py              # Alternative / legacy version
+│   ├── Data_EO.csv / .xls        # Sample input data
+│   ├── ftp_cl_as400.bat          # Batch file for FTP operations
+│   ├── .env                      # Environment variables (credentials)
+│   └── README.md
+│
+├── Java_Scripts/                 # Additional Java utilities
+├── Python_Scripts/               # Standalone Python scripts
 └── README.md
 
 ---
