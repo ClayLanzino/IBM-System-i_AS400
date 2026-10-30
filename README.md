@@ -38,6 +38,7 @@ This reduces manual data entry, avoids human error, and speeds up the payroll cy
 ---
 
 ## ⚙️ How It Works
+
 ```text
 [ .xls file with employee salaries ]
               │
@@ -52,35 +53,27 @@ This reduces manual data entry, avoids human error, and speeds up the payroll cy
               │
               ▼
   [ Salary records updated in DB2/400 ]
-
-## 📱 Interface Preview
-
-**1. PAYROLL Confirmation Dialog**
-![PAYROLL Confirmation Dialog](https://raw.githubusercontent.com/ClayLanzino/IBM-System-i_AS400/master/images/payroll.png)
-
-**2. Payroll Execution Console (Python & DB2/400 Connection)**
-![Payroll Execution Console](https://raw.githubusercontent.com/ClayLanzino/IBM-System-i_AS400/master/images/payroll.exe.png)
-
-*Confirmation dialog of the PAYROLL executable. The user confirms the execution, and the system converts the `.xls` file to `.csv` and updates the salaries in the IBM DB2/400 database.*
-
 ---
+📱 Interface Preview
+1. PAYROLL Confirmation Dialog
+https://raw.githubusercontent.com/ClayLanzino/IBM-System-i_AS400/master/images/payroll.png
 
-## 🧰 Tech Stack
+2. Payroll Execution Console (Python & DB2/400 Connection)
+https://raw.githubusercontent.com/ClayLanzino/IBM-System-i_AS400/master/images/payroll.exe.png
 
-| Component | Details |
-|-----------|---------|
-| Language | Python 3.8 |
-| Auxiliary scripting | '.bat' files |
-| Database | IBM DB2/400 |
-| Connectivity | ODBC, FTP |
-| Platform | Windows 10+, IBM i OS 6.0+ |
-| File formats | '.xls', '.csv' |
-| Security | VPN connection required for IBM i access |
-
+Confirmation dialog of the PAYROLL executable. The user confirms the execution, and the system converts the .xls file to .csv and updates the salaries in the IBM DB2/400 database.
 ---
-
-## 📁 Project Structure
-```text
+🧰 Tech Stack
+Component	Details
+Language	Python 3.8
+Auxiliary scripting	'.bat' files
+Database	IBM DB2/400
+Connectivity	ODBC, FTP
+Platform	Windows 10+, IBM i OS 6.0+
+File formats	'.xls', '.csv'
+Security	VPN connection required for IBM i access
+---
+📁 Project Structure
 IBM-System-i_AS400/
 │
 ├── src/
@@ -96,66 +89,49 @@ IBM-System-i_AS400/
 ├── Java_Scripts/                 # Additional Java utilities
 ├── Python_Scripts/               # Standalone Python scripts
 └── README.md
-
 ---
-
-## 🛠️ Installation
-
-### Prerequisites
-
+🛠️ Installation
+Prerequisites
 On the user's PC or laptop:
 
-- **Microsoft Windows 10 or later**
-- **Python 3.8** (if running from source; not required if using the '.exe')
-- **VPN connection enabled** with IBM i Series / AS/400 service availability
-- Access to the `Python_Nomina` folder containing all required files:
-  - '.xls', '.csv', '.bat', '.dll' files
+Microsoft Windows 10 or later
 
-### Setup Steps
+Python 3.8 (if running from source; not required if using the '.exe')
 
+VPN connection enabled with IBM i Series / AS/400 service availability
+
+Access to the Python_Nomina folder containing all required files: '.xls', '.csv', '.bat', '.dll' files
+---
+
+Setup Steps
 1. Copy the 'Python_Nomina' folder to the user's PC.
 2. Ensure the '.xls' and '.csv' templates are in the same folder.
-3. Confirm the same files exist in the **IBM i IFS (Integrated File System)**.
+3. Confirm the same files exist in the IBM i IFS (Integrated File System).
 4. Enable the VPN connection to the IBM i server.
 5. Run 'PAYROLL.exe' (or 'payroll.py' if running from source).
-
 ---
+🚀 Usage
+The program is based on the executable PAYROLL:
 
-## 🚀 Usage
-
-The program is based on the executable **PAYROLL**:
-
-1. Place the '.xls' file containing the list of workers with their **base salary** in the correct folder.
+1. Place the '.xls' file containing the list of workers with their base salary in the correct folder.
 2. Run 'PAYROLL.exe'.
 3. The script:
-   - Converts the '.xls' file into a '.csv' file.
-   - Connects to the IBM i server.
-   - Automatically updates the salary records in the DB2/400 database.
+   Converts the '.xls' file into a '.csv' file.
+   Connects to the IBM i server.
+   Automatically updates the salary records in the DB2/400 database.
 4. Verify the update on the IBM i side.
 
----
+🔐 Security Notes
+  Credentials are managed through a '.env' file (excluded from version control).
+  VPN connection is required to reach the IBM i server.
+  Only authorized payroll users with the executable installed can run the system.
 
-## 🔐 Security Notes
+📜 License
+This project is licensed under the MIT License. See the 'LICENSE' file for details.
 
-- Credentials are managed through a '.env' file (excluded from version control).
-- VPN connection is required to reach the IBM i server.
-- Only authorized payroll users with the executable installed can run the system.
+📬 Contact
+Clay Lancini
+📧 Email: clay.lancini@gmail.com
+🐙 GitHub: github.com/ClayLanzino
 
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**. See the 'LICENSE' file for details.
-
----
-
-## 📬 Contact
-
-**Clay Lancini**
-
-- 📧 Email: [clay.lancini@gmail.com](mailto:clay.lancini@gmail.com)
-- 🐙 GitHub: [github.com/ClayLanzino](https://github.com/ClayLanzino)
-
----
-
-*Built to bridge modern Python automation with classic IBM i (AS/400) systems.*
+Built to bridge modern Python automation with classic IBM i (AS/400) systems.
