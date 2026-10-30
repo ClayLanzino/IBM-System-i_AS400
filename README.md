@@ -1,6 +1,6 @@
-# Python – IBM i (AS/400) Payroll Interface
+# Python – IBM i (AS400) Payroll Interface
 
-A Python-based automation tool that bridges a Windows PC and an IBM i (AS/400) server to process payroll data efficiently. The system reads employee salaries from an '.xls' file, converts them to '.csv', and automatically updates the records in the IBM DB2/400 database.
+A Python-based automation tool that bridges a Windows PC and an IBM i (AS400) server to process payroll data efficiently. The system reads employee salaries from an '.xls' file, converts them to '.csv', and automatically updates the records in the IBM DB2/400 database.
 
 ![Python](https://img.shields.io/badge/Python-3.8-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![IBM i](https://img.shields.io/badge/IBM%20i-AS%2F400-052FAD?style=for-the-badge&logo=ibm&logoColor=white)
@@ -12,7 +12,7 @@ A Python-based automation tool that bridges a Windows PC and an IBM i (AS/400) s
 
 ## 📌 Overview
 
-This project provides a simple and reliable way for payroll teams to **update employee salaries directly in an IBM i (AS/400) system** without needing to know RPG or DB2 syntax.
+This project provides a simple and reliable way for payroll teams to **update employee salaries directly in an IBM i (AS400) system** without needing to know RPG or DB2 syntax.
 
 The user works with an Excel template ('.xls') containing worker records and base salaries. The tool:
 
@@ -31,7 +31,7 @@ This reduces manual data entry, avoids human error, and speeds up the payroll cy
 - 🔄 **Bulk data conversion** – handles large volumes of payroll data.
 - 🖥️ **Windows compatible** – runs on Windows 10 or later.
 - 🐍 **Python 3.8** – leverages simple, readable scripting.
-- 🏢 **IBM i (AS/400) OS 6.0+ compatible** – supports both classic and modern IBM i environments.
+- 🏢 **IBM i (AS400) OS 6.0+ compatible** – supports both classic and modern IBM i environments.
 - 🔒 **Restricted access** – only users with the executable file installed on their PC can run the system.
 - 📊 **Excel → CSV → DB2/400 pipeline** – fully automated.
 
